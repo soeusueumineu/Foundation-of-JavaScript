@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcSum(n) {
+        let sum = 0; // 함수 아에서만 사용 가능, let을 빼면 전역 변수 (*var과 다른 점 : 재선언 불가능)
+        for (let i = 1; i < n + 1; i++) {
+          sum += i;
+        }
+        console.log(sum);
+      }
+      calcSum(10);
+    </script>
+  </body>
+</html>

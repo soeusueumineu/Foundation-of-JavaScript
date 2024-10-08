@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //즉시 실행 함수 == 익명 함수
+      (function () {
+        var userName = prompt("이름을 입력하세요.");
+        document.write("안녕하세요? " + userName + "님");
+      })(); //함수 정의와 동시에 실행 가능
+
+      (function (num1, num2) {
+        sum = num1 + num2;
+        alert(sum);
+      })(10, 20); //매개 변수가 있을 때
+    </script>
+  </body>
+</html>

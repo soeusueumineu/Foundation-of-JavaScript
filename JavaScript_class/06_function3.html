@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const hi = function () {
+        //const : 상수를 지정하는 예약어
+        alert("안녕하세요.");
+      };
+      hi();
+
+      const HI = () => {
+        alert("안녕하세요.");
+      };
+      HI(); //매개 변수가 없는 경우
+
+      let Hi = (name) => {
+        document.write("안녕하세요 " + name + "님");
+      };
+      Hi("성민"); //매개 변수가 있는 경우
+    </script>
+  </body>
+</html>

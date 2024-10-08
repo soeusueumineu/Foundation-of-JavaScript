@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="change">글자색 바꾸기</button>
+    <p>
+      기억나 우리 처음 만난 날 내게 오던 너의 그 미소가 마치 날 알고있던 것처럼
+      매일 스쳐 지나 가던 바람 처럼 가끔은 우리 사이가 멀어질까 혼자 남아버리는
+      상상을 해 oh 이런 나를 잡아줘 우리 처음 만난 날처럼 내가 너를 꼭 찾을 수
+      있게 ​늘 꿈에서만 그리던 너와 함께 할 모든 날들이 ​더 희미해 지기 전에 나
+      시간이 없어 지금 닿을수는 없는 거리 일지 라도 꼭 너와 함께 있다는 기분이
+      들어 널 주저했던 걸음, 마음. 나는 왜이리 바보같은지 자신이 없어 늘
+      같은곳을 바라보던 너의 그 눈이 좋아 변한 세상에서 너만은 그대로 있어 줘
+      you're my sunshine 늘 같은곳을 헤메이던 너와 내 시간 속에. 날 잊어버린다
+      해도 다시 한 번 너를 만나러 갈테니까 조금씩 가까워지고 있어 느껴지니
+      보이진 않아도 한조각 마지막 퍼즐처럼 너 하나로 내 세상이 맞물려가 어쩌면
+      넌 사라질 무지개처럼 날 두고 떠날지도 모르지만 이런 나를 잡아줘 우리 처음
+      만난 날처럼 내가 너를 꼭 잡을 수 있게 ​늘 꿈에서만 그리던 너와 함께 할
+      모든 날들이 ​더 희미해 지기 전에 나 시간이 없어 지금 닿을수는 없는 거리
+      일지 라도 꼭 너와 함께 있다는 기분이 들어 날 주저했던 걸음, 마음. 너의
+      세상이 끝난다해도 기다릴거야 차원을 넘어 너에게 달려가고 있어 지금 내
+      심장소리가 터질것만 같아 들어 봐 기억해줘 이 세상 속에 멈춰있는 너와 내
+      시간 속에 어쩌면 이건 우리의 처음이자 마지막 사랑 일테니까 일테니까
+      기억해줘 이 꿈 속 너와 함께했던 시간은 진짜일까 늘 간직하던 약속들 그대로
+      just waiting for you you're my sunshine 이 세상 속에 멈춰있는 너와 내 시간
+      속에 어쩌면 이건 우리의 처음이자 마지막 사랑 일테니까
+    </p>
+    <script>
+      //dom을 이용하는 방법
+      // 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+      var changeBttn = document.querySelector("#change");
+      changeBttn.onclick = changeColor;
+
+      function changeColor() {
+        document.querySelector("p").style.color = "#f00";
+      }
+
+      //방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+      //document.querySelector("#change").onclick = changeColor;
+
+      //  function changeColor(){
+      //    document.querySelector("p").style.color = "#f00";
+      //  }
+
+      //방법 3 : 직접 함수를 선언
+      //document.querySelector("#change").onclick = function(){
+      //     document.querySelector("p").style.color = "#f00";
+      // }
+    </script>
+  </body>
+</html>

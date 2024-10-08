@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h1>while문을 사용한 팩토리얼 계산</h1>
+  <body>
+    <script>
+      var n = prompt("숫자를 입력하세요.", "10");
+      var msg = "";
+
+      if (n !== null) {
+        //취소 버튼을 누르지 않았는지 체크
+        var nFact = 1; //결과값
+        var i = 1; // 카운터
+
+        while (i <= n) {
+          nFact *= i;
+          i++;
+        }
+        msg = n + "! =" + nFact; //결과값을 표시할 문자열
+      } else {
+        msg = "값을 입력하지 않았습니다.";
+      }
+      document.write(msg);
+    </script>
+  </body>
+</html>
